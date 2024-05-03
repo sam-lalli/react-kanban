@@ -1,7 +1,11 @@
-const Boards = () => {
-  return (
-    <div>Boards</div>
-  )
-}
 
-export default Boards
+const Boards = () => {
+	
+	return (
+		<>
+			Boards
+		</>
+	);
+};
+
+export default Boards;
