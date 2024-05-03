@@ -1,7 +1,9 @@
 import {
 	AppsOutline,
+	ChevronDown,
 	HomeOutline,
 	ListOutline,
+    PersonCircle,
 } from "react-ionicons";
 
 const Sidebar = () => {
@@ -32,8 +34,21 @@ const Sidebar = () => {
 	return (
 		<div className="fixed left-0 top-0 md:w-[230px] w-[60px] overflow-hidden h-full flex flex-col">
 			<div className="w-full flex items-center md:justify-start justify-center md:pl-5 h-[70px] bg-[#fff]">
-				<span className="text-[#7F00FF] font-semibold text-2xl md:block hidden">Logo.</span>
-				<span className="text-[#7F00FF] font-semibold text-2xl md:hidden block">L.</span>
+                <div className="flex items-center gap-3 cursor-pointer">
+                    <PersonCircle
+                        color="#7F00FF"
+                        width={"28px"}
+                        height={"28px"}
+                    />
+                    <span className="text-black font-semibold md:text-lg text-sm whitespace-nowrap">
+                        QA Wolf
+                    </span>
+                    <ChevronDown
+                        color="#000000"
+                        width={"16px"}
+                        height={"16px"}
+                    />
+                </div>
 			</div>
 			<div className="w-full h-[calc(100vh-70px)] border-r flex flex-col md:items-start items-center gap-2 border-slate-300 bg-[#fff] py-5 md:px-3 px-3 relative">
 				{navLinks.map((link) => {
